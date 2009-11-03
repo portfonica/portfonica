@@ -3,3 +3,8 @@ thumbs.db
 log/*
 tmp/*
 *.itProject
+bin/*
+gems/gems
+gems/specifications
+gems/doc
+gems/environment.rb
