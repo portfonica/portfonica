@@ -1,0 +1,103 @@
+#tabs
+  %ul#tabs-main
+    %li#mod1.active= link_to t('main_menu.dashboard.link'), '#', :title => t('main_menu.dashboard.title')
+    %li#mod3= link_to t('main_menu.portfolio.link'), '#', :title => t('main_menu.portfolio.title')
+    %li#mod4= link_to t('main_menu.study_plan.link'), '#', :title => t('main_menu.study_plan.title')
+#panels
+  .panel
+    .header
+      %h3#panel-calendar Kalendář kurzů
+      %p= link_to 'Upravit', '#', :title => ''
+    %p.month<
+      Březen 2009
+      = link_to 'Předchozí měsíc', '#', :title => '', :class => 'left-arrow'
+      = link_to 'Následující měsíc', '#', :title => '', :class => 'right-arrow'
+    %table
+      %thead
+        %tr
+          %th Po
+          %th Út
+          %th St
+          %th Čt
+          %th Pá
+          %th So
+          %th Ne
+      %tbody
+        %tr
+          %td.empty &nbsp;
+          %td.empty &nbsp;
+          %td.empty &nbsp;
+          %td.empty &nbsp;
+          %td.empty &nbsp;
+          %td.empty &nbsp;
+          %td 1
+        %tr
+          %td 2
+          %td 3
+          %td 4
+          %td 5
+          %td 6
+          %td 7
+          %td 8
+        %tr
+          %td 9
+          %td 10
+          %td 11
+          %td 12
+          %td 13
+          %td 14
+          %td 15
+        %tr
+          %td 16
+          %td.active 17
+          %td 18
+          %td 19
+          %td 20
+          %td 21
+          %td 22
+        %tr
+          %td 23
+          %td 24
+          %td.active 25
+          %td 26
+          %td 27
+          %td 28
+          %td 29
+        %tr
+          %td 30
+          %td 31
+          %td.empty &nbsp;
+          %td.empty &nbsp;
+          %td.empty &nbsp;
+          %td.empty &nbsp;
+          %td.empty &nbsp;
+  .panel
+    .header
+      %h3#panel-courses Aktivní kurzy
+      %p= link_to 'Upravit', '#', :title => ''
+    %dl
+      %dt Lorem ipsum dolor sit amet
+      %dd consecter adipiscing elit. Pellentesgue dictum auctor nunc.
+      %dt.even Lorem ipsum dolor sit amet
+      %dd.even consecter adipiscing elit. Pellentesgue dictum auctor nunc.
+      %dt Lorem ipsum dolor sit amet
+      %dd consecter adipiscing elit. Pellentesgue dictum auctor nunc.
+      %dt.even Lorem ipsum dolor sit amet
+      %dd.even consecter adipiscing elit. Pellentesgue dictum auctor nunc.
+      %dt Lorem ipsum dolor sit amet
+      %dd consecter adipiscing elit. Pellentesgue dictum auctor nunc.
+  .panel
+    .header
+      %h3#panel-discussion Diskuze ke kurzům
+      %p= link_to 'Upravit', '#', :title => ''
+    %dl
+      %dt Lorem ipsum dolor sit amet
+      %dd consecter adipiscing elit. Pellentesgue dictum auctor nunc.
+      %dt.even Lorem ipsum dolor sit amet
+      %dd.even consecter adipiscing elit. Pellentesgue dictum auctor nunc.
+      %dt Lorem ipsum dolor sit amet
+      %dd consecter adipiscing elit. Pellentesgue dictum auctor nunc.
+      %dt.even Lorem ipsum dolor sit amet
+      %dd.even consecter adipiscing elit. Pellentesgue dictum auctor nunc.
+      %dt Lorem ipsum dolor sit amet
+      %dd consecter adipiscing elit. Pellentesgue dictum auctor nunc.

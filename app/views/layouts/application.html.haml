@@ -1,0 +1,14 @@
+!!! XML
+!!! Strict
+%html
+  %head
+    %title Portfonica
+    %meta{ 'http-equiv' => 'content-type', :content => 'text/html; charset=utf-8' }
+    = javascript_include_tag 'jquery-1.3.2.min', 'application'
+    = stylesheet_link_tag 'main'
+  %body
+    = render :partial => 'layouts/header'
+    #body
+      = yield
+    #footer
+      = render :partial => 'layouts/footer'
