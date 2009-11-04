@@ -1,5 +1,9 @@
 RAILS_GEM_VERSION = '2.3.4' unless defined? RAILS_GEM_VERSION
 
+# Temporary solution for solving the problem with encoding on Rails and Ruby 1.9.1
+Encoding.default_internal = 'utf-8'
+Encoding.default_external = 'utf-8'
+
 require File.join(File.dirname(__FILE__), 'boot')
 
 Rails::Initializer.run do |config|
